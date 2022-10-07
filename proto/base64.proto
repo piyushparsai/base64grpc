@@ -1,0 +1,36 @@
+
+syntax = "proto3";
+
+option go_package = "adcp.psl.com/grpc/intro/grpc/base64";
+
+package base64;
+
+// The Encoding service definition.
+service Base64 {
+  // Encode the string
+  rpc EncodeString (EncodingRequest) returns (EncodingResponse) {}
+ 
+  // Decode the string
+  rpc DecodeString (DecodingRequest) returns (DecodingResponse) {}
+}
+
+// The request message containing the string to encode.
+message EncodingRequest {
+  string strToEncode = 1;
+}
+
+// The response message containing the encoded response
+message EncodingResponse {
+  string encodedStr = 1;
+}
+
+// The request message containing the string to decode.
+message DecodingRequest {
+    string strToDecode = 1;
+}
+  
+// The response message containing the decoded response
+message DecodingResponse {
+    string decodedStr = 1;
+}
+  
