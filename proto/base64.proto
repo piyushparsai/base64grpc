@@ -1,7 +1,7 @@
 
 syntax = "proto3";
 
-option go_package = "adcp.psl.com/grpc/intro/grpc/base64";
+option go_package = "github.com/piyushparsai/base64grpc";
 
 package base64;
 

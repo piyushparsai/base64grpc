@@ -4,7 +4,7 @@
 // - protoc             v3.21.1
 // source: proto/base64.proto
 
-package base64
+package base64grpc
 
 import (
 	context "context"
