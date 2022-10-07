@@ -1,4 +1,4 @@
-module base64-grpc-go
+module github.com/piyushparsai/base64grpc
 
 go 1.18
 

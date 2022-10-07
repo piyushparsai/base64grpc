@@ -9,7 +9,7 @@ import (
 	"net"
 
 	"google.golang.org/grpc"
-	pb "../proto/base64"
+	pb "github.com/piyushparsai/base64grpc"
 	b64 "encoding/base64"
 )
 
